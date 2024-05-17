@@ -1,0 +1,680 @@
+/* General Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  height: 100%;
+}
+.navbar-nav .nav-link {
+  color: white; /* Warna teks putih */
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  background-color: white; /* Warna latar belakang putih saat hover */
+  color: green; /* Warna teks hijau saat hover */
+}
+
+.navbar-nav .nav-link.active {
+  background-color: white; /* Warna latar belakang putih saat aktif */
+  color: green; /* Warna teks hijau saat aktif */
+}
+.since {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+#hamburger-menu {
+  display: none; /* Mengatur warna ikon menjadi putih */
+}
+/* Gaya untuk menu hamburger */
+.navbar-toggler {
+  border: none; /* Hapus border default dari tombol hamburger */
+  background: transparent; /* Jadikan latar belakang tombol hamburger transparan */
+  padding: 0; /* Hapus padding default */
+}
+
+.menu-bar-container {
+  display: flex; /* Gunakan Flexbox */
+  flex-direction: column; /* Atur orientasi kolom */
+  justify-content: center; /* Posisikan garis di tengah secara vertikal */
+  align-items: center; /* Posisikan garis di tengah secara horizontal */
+  width: 30px; /* Lebar container */
+  height: 20px; /* Tinggi container */
+}
+
+.menu-bar {
+  display: block;
+  width: 80%; /* Lebar garis */
+  height: 2px; /* Tinggi garis */
+  background-color: white; /* Warna putih untuk garis-garis hamburger */
+  margin: 2px 0; /* Jarak antar garis */
+  transition: background-color 0.3s ease; /* Mengatur transisi untuk efek hover */
+}
+
+/* Ubah warna garis menjadi hijau saat di-hover */
+.navbar-toggler:hover.menu-bar {
+  background-color: green; /* Warna hijau saat di-hover */
+}
+
+/* Gaya untuk menu navigasi */
+.navbar-nav.nav-link {
+  color: white; /* Warna teks putih */
+}
+
+/* Efek hover untuk menu navigasi */
+.navbar-nav.nav-link:hover {
+  color: green; /* Warna hijau saat di-hover */
+}
+.navbar-nav.dropdown:hover.dropdown-menu {
+  display: block;
+}
+
+.navbar-nav.dropdown-menu {
+  margin-top: 0;
+}
+.bannerhalamanutama {
+  background-image: url('background/home1.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: left;
+  padding: 20px 50px; /* Adjust padding to ensure elements are not too close to the edges */
+  text-align: left;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Align items to the top */
+  align-items: flex-start; /* Align items to the left */
+  height: 84vh;
+  position: relative;
+  font-family: 'Roboto', sans-serif; /* Font for a modern look */
+}
+
+.bannerhalamanutama::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  z-index: 1;
+}
+
+.bannerhalamanutama * {
+  position: relative;
+  z-index: 2;
+}
+
+.bannerhalamanutama h1 {
+  font-size: 25px; /* Larger font size for the main heading */
+  margin: 0px 0; /* Adjust margin for spacing */
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; /* Stylish font for headings */
+  font-weight: bold; /* Make the font bold */
+}
+
+.bannerhalamanutama h2 {
+  font-size: 25px; /* Slightly smaller font size for the subheading */
+  margin: 0px 0; /* Adjust margin for spacing */
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; /* Consistent font for headings */
+  font-weight: bold; /* Make the font bold */
+  max-width: 700px;
+}
+
+.bannerhalamanutama p {
+  font-size: 15px; /* Font size for paragraph text */
+  margin: 30px 0; /* Adjust margin for spacing */
+  padding: 0;
+  max-width: 400px; /* Restrict the width for better readability */
+}
+
+@media (max-width: 768px) {
+  .bannerhalamanutama {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .bannerhalamanutama h1 {
+    font-size: 20px; /* Adjust font size for smaller screens */
+  }
+
+  .bannerhalamanutama h2 {
+    font-size: 19px; /* Adjust font size for smaller screens */ 
+  }
+
+  .bannerhalamanutama p {
+    font-size: 10px; /* Adjust font size for smaller screens */
+  }
+}
+
+
+.halaman2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+.halaman2-text {
+  max-width: 600px;
+  flex: 1 1 300px;
+  margin: 2px;
+}
+
+.halaman2-text h2 {
+  color: #2c3e50;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.halaman2-text p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.halaman2-image {
+  position: relative;
+  flex: 1 1 100px;
+  margin: 10px;
+}
+
+.halaman2-image img {
+  max-width: 60%;
+  border-radius: 5px;
+}
+
+.core-value {
+  position: absolute;
+  top: 60px;
+  left: 75%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 325px;
+  box-shadow: 0 0 10px rgba(252, 251, 251, 0.1);
+}
+
+.core-value h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.core-value ul {
+  list-style: none;
+  padding: 0;
+}
+
+.core-value li {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.halaman3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.halaman3-text {
+  max-width: 3000px; /* Mengurangi lebar maksimum text */
+  flex: 1 1 100px;
+  margin: 110px; /* Mengurangi margin */
+  display: flex; /* Menjadikan konten dalam flex container */
+  flex-direction: column; /* Menjadikan konten berada dalam satu kolom */
+  align-items: center; /* Mengatur konten agar berada di tengah */
+  text-align: right; /* Mengatur teks agar berada di tengah */
+}
+
+.halaman3-text h2 {
+  color: #2c3e50;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.halaman3-text p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.halaman3-image {
+  flex: 1 1 30px; /* Mengurangi lebar gambar */
+  margin: 10px; /* Mengurangi margin */
+}
+
+.halaman3-image img {
+  max-width: 80%; /* Gambar akan menyesuaikan lebar maksimum dari parent elementnya */
+  border-radius: 60%;
+}
+
+.halaman4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+.halaman4-text {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.halaman4-text h2 {
+  color: #2c3e50;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-card {
+  text-align: center;
+  padding-bottom: 2rem;
+  flex-basis: calc(70% / 3 - 20px); /* Mengatur lebar masing-masing kartu menu */
+  margin: 10px; /* Memberikan jarak antar kartu menu */
+}
+
+.menu-card img {
+  border-radius: 50%;
+  width: 80%;
+}
+
+.menu-card .menu-card-title {
+  margin-top: 1rem;
+}
+
+.menu-card .menu-card-price {
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .menu-card {
+    flex-basis: calc(100% / 2 - 20px); /* Untuk tampilan pada perangkat mobile, 2 kartu per baris */
+  }
+}
+
+@media (max-width: 576px) {
+  .menu-card {
+    flex-basis: calc(100% - 20px); /* Untuk tampilan pada perangkat mobile dengan lebar layar lebih kecil, 1 kartu per baris */
+  }
+}
+
+.halaman5 {
+  padding: 50px;
+  background-color: #f4f4f4;
+}
+
+.halaman5-text {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.halaman5-text h1 {
+  color: #2c3e50;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.halaman5-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.halaman5-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: calc(50% - 10px); /* 50% width untuk setiap item dengan jarak 10px antar item */
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.halaman5-item img {
+  width: 100%; /* Membuat gambar mengambil lebar penuh parent element */
+  height: auto; /* Membuat tinggi gambar menyesuaikan dengan lebar */
+  max-width: 100px; /* Membatasi lebar maksimum gambar */
+  margin-right: 20px; /* Menambahkan jarak antara gambar dan keterangan */
+  border-radius: 45px; /* Membuat gambar memiliki sudut bulat */
+}
+
+.keterangan-gambar {
+  flex: 1; /* Membuat keterangan mengambil sisa lebar div parent */
+}
+
+.keterangan-gambar h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.keterangan-gambar p {
+  font-size: 16px;
+}
+
+/* Media Query untuk layar dengan lebar maksimum 768px (tablet dan mobile) */
+@media (max-width: 768px) {
+  .halaman5-item {
+    width: 100%; /* 100% width untuk tampilan pada perangkat mobile */
+    flex-direction: column; /* Menyusun elemen secara vertikal hanya pada perangkat mobile */
+    align-items: flex-start;
+  }
+
+  .halaman5-item img {
+    margin-bottom: 10px; /* Memberikan jarak bawah antara gambar dan keterangan */
+    max-width: 100%; /* Mengatur lebar maksimum gambar agar responsif */
+  }
+}
+
+.whatsapp-button {
+  margin-top: 10px;
+}
+/* CSS untuk tombol WhatsApp */
+.whatsapp-buttongeser {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+.whatsapp-buttongeser a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #25d366;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-buttongeser a:hover {
+  background-color: #ffffff;
+}
+
+.whatsapp-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button a:hover {
+  background-color: #218838;
+}
+
+.whatsapp-button a i {
+  margin-right: 5px;
+}
+.kontak {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+
+.map {
+  width: 100%;
+  height: 400px;
+  margin-right: 20px;
+}
+.kontak-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  border: 2px solid #ccc;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.map-container {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.iframe-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #ccc;
+}
+
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.kontak-form {
+  flex: 1;
+  max-width: 100%;
+  margin-left: 20px;
+}
+
+/* Media Query untuk layar dengan lebar maksimum 600px (perangkat mobile) */
+@media (max-width: 600px) {
+  .kontak-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .map-container, .kontak-form {
+      max-width: 100%;
+      margin-left: 0;
+  }
+}
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+}
+
+input[type='text'] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  padding-left: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #00b140;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #007b27;
+}
+
+/* Mobile Styles */
+@media (max-width: 576px) {
+  /* Mengubah tata letak konten menjadi vertikal pada perangkat mobile */
+  .kontak-content {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto; /* Memposisikan konten ke tengah */
+  }
+
+  /* Mengatur lebar peta dan formulir agar mengambil lebar penuh */
+  .map {
+    width: 100%;
+    height: 200px;
+  }
+  .kontak-form {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  /* Mengatur jarak antar grup input pada layar kecil */
+  .input-group {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .bannerhalamanutama h2 {
+    font-size: 36px; /* Mengurangi ukuran font h2 */
+  }
+
+  .bannerhalamanutama ul {
+    font-size: 18px; /* Mengurangi ukuran font ul */
+  }
+
+  .city-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .city-buttons button {
+    font-size: 14px; /* Mengurangi ukuran font button */
+    padding: 8px 12px; /* Mengurangi padding button */
+    margin: 5px 0; /* Menambahkan margin vertical */
+  }
+
+  .halaman {
+    padding: 20px; /* Mengurangi padding halaman */
+  }
+
+  .halaman2 {
+    flex-direction: column; /* Susun elemen secara vertikal */
+  }
+
+  .halaman3 {
+    padding: 20px 10px; /* Mengurangi padding vertikal pada perangkat mobile */
+    flex-direction: column; /* Susun elemen secara vertikal */
+  }
+
+  .halaman5 {
+    padding: 20px 10px; /* Mengurangi padding vertikal pada perangkat mobile */
+    flex-direction: column; /* Susun elemen secara vertikal */
+  }
+
+  .halaman2-text,
+  .halaman2-image,
+  .halaman3-image,
+  .halaman3-text,
+  .halaman5-item {
+    flex: 1 1 100%; /* Membuat elemen mengambil lebar penuh */
+    margin: 10px 0;
+  }
+
+  .halaman2-text h2,
+  .halaman3-text h2 {
+    font-size: 24px; /* Mengurangi ukuran font h2 pada halaman 2 dan 3 */
+  }
+
+  .halaman2-text p,
+  .halaman3-text p {
+    font-size: 14px; /* Mengurangi ukuran font paragraf pada halaman 2 dan 3 */
+  }
+
+  .halaman2-image,
+  .halaman3-image {
+    max-width: 100%; /* Memastikan gambar tidak melebihi lebar layar */
+    text-align: center; /* Membuat gambar berada di tengah halaman */
+  }
+
+  .halaman2-image img,
+  .halaman3-image img {
+    max-width: 80%; /* Mengurangi lebar gambar */
+    border-radius: 50%; /* Membuat gambar menjadi bundar */
+  }
+
+  .core-value {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+    width: auto; /* Lebarkan core value agar konten tidak terpotong */
+    max-width: 90%; /* Membatasi lebar core value */
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .menu-card,
+  .menu-card1 {
+    flex: 1 1 100%;
+    margin: 10px 0;
+  }
+  .halaman5-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px; /* Memberikan jarak antar gambar */
+  }
+
+  .halaman5-item img {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    max-height: 200px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .halaman5-item img {
+      max-width: 150px;
+      max-height: 100px;
+    }
+  }
+  @media (max-width: 768px) {
+    .whatsapp-buttongeser {
+      bottom: 80px;
+      right: 10px;
+    }
+
+    .whatsapp-buttongeser a {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+}
