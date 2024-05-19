@@ -386,7 +386,38 @@ html {
   }
 }
 
+/* Tombol scroll to top */
+#scrollToTopBtn {
+  display: none; /* Tombol tidak terlihat secara default */
+  position: fixed; /* Tetap di posisi yang sama saat di-scroll */
+  bottom: 75px; /* Jarak dari bawah halaman */
+  right: 10px; /* Jarak dari kanan halaman */
+  z-index: 99; /* Pastikan tombol berada di atas elemen lainnya */
+  background-color: #28a745; /* Warna latar belakang */
+  color: white; /* Warna ikon */
+  border: none; /* Hilangkan border */
+  outline: none; /* Hilangkan outline */
+  width: 50px; /* Lebar tombol */
+  height: 50px; /* Tinggi tombol */
+  border-radius: 50%; /* Bentuk lingkaran */
+  text-align: center; /* Pusatkan ikon */
+  font-size: 24px; /* Ukuran ikon */
+  cursor: pointer; /* Ubah kursor menjadi pointer */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+}
 
+#scrollToTopBtn:hover {
+  background-color: #218838; /* Warna latar belakang saat dihover */
+}
+@media screen and (max-width: 768px) {
+  #scrollToTopBtn {
+    bottom: 130px; /* Sesuaikan jarak dari bawah untuk mobile */
+    right: 10px; /* Sesuaikan jarak dari kanan untuk mobile */
+    width: 40px; /* Sesuaikan lebar tombol untuk mobile */
+    height: 40px; /* Sesuaikan tinggi tombol untuk mobile */
+    font-size: 20px; /* Sesuaikan ukuran ikon untuk mobile */
+  }
+}
 .whatsapp-button {
   margin-top: 10px;
 }
