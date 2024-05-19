@@ -352,11 +352,11 @@ html {
 }
 
 .halaman5-item img {
-  width: 100%; /* Membuat gambar mengambil lebar penuh parent element */
-  height: auto; /* Membuat tinggi gambar menyesuaikan dengan lebar */
-  max-width: 100px; /* Membatasi lebar maksimum gambar */
+  width: 100px; /* Tetapkan lebar gambar agar berbentuk bulat */
+  height: 100px; /* Tetapkan tinggi gambar agar berbentuk bulat */
   margin-right: 20px; /* Menambahkan jarak antara gambar dan keterangan */
-  border-radius: 45px; /* Membuat gambar memiliki sudut bulat */
+  border-radius: 50%; /* Membuat gambar berbentuk bulat */
+  object-fit: cover; /* Pastikan gambar menutupi area secara proporsional */
 }
 
 .keterangan-gambar {
@@ -377,14 +377,15 @@ html {
   .halaman5-item {
     width: 100%; /* 100% width untuk tampilan pada perangkat mobile */
     flex-direction: column; /* Menyusun elemen secara vertikal hanya pada perangkat mobile */
-    align-items: flex-start;
+    align-items: center; /* Gambar dan keterangan di tengah */
   }
 
   .halaman5-item img {
     margin-bottom: 10px; /* Memberikan jarak bawah antara gambar dan keterangan */
-    max-width: 100%; /* Mengatur lebar maksimum gambar agar responsif */
+    margin-right: 0; /* Hilangkan margin kanan pada tampilan mobile */
   }
 }
+
 
 .whatsapp-button {
   margin-top: 10px;
@@ -651,21 +652,6 @@ input[type='text'] {
     margin-bottom: 20px; /* Memberikan jarak antar gambar */
   }
 
-  .halaman5-item img {
-    width: 100%;
-    height: auto;
-    max-width: 300px;
-    max-height: 200px;
-    margin: 10px;
-    border-radius: 10px;
-  }
-
-  @media (max-width: 768px) {
-    .halaman5-item img {
-      max-width: 150px;
-      max-height: 100px;
-    }
-  }
   @media (max-width: 768px) {
     .whatsapp-buttongeser {
       bottom: 80px;
